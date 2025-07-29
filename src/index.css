@@ -1,0 +1,16 @@
+
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/product-sans');
+
+#root {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Optional: You can apply Product Sans like this */
+.product {
+  font-family: 'Product Sans', sans-serif;
+}
