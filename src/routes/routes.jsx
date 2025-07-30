@@ -9,6 +9,8 @@ import OTP_Verification from "../Pages/Authentication/OTP_Verification";
 import ResetPassword from "../Pages/Authentication/ResetPassword";
 import Admin_Home from "../Layout/Admin/Admin_Home";
 import StartSurvey from "../Pages/Home/StartSurvey";
+import AiQuestion from "../Pages/Home/AiQuestion";
+import Feedback from "../Pages/Home/Feedback";
   
 
 export const router = createBrowserRouter([
@@ -17,7 +19,9 @@ export const router = createBrowserRouter([
       element: <Main />,
         children: [
           {path: '/', element: <Home/>},
-          {path: '/start_survey', element: <StartSurvey/>}
+          {path: '/start_survey', element: <StartSurvey/>},
+          {path: '/ai_question', element: <AiQuestion/>},
+          {path: '/feedback', element: <Feedback/>},
       ]
     },
 
