@@ -4,6 +4,7 @@ import Bannerbg from '../../../public/image/banner.png';
 import { Link } from 'react-router-dom'
 
 import { Globe as GlobeIcon, ChevronDown as ChevronDownIcon } from 'lucide-react';
+import logo from '../../../public/image/logo.png';
 
 const languages = [
   { code: 'en', name: 'English' },
@@ -26,6 +27,13 @@ function StartSurvey() {
       className="bg-cover bg-center"
       style={{ backgroundImage: `url(${Bannerbg})` }}
     >
+      <div className=" px-30 pt-6 fixed mx-auto flex justify-between items-center">
+        <div className="flex items-center space-x-4">
+          <img src={logo} alt="Logo" className="h-14 w-auto" /> 
+        </div>
+
+        
+      </div>
       <div className="relative flex md:space-y-14 space-y-12 flex-col bg-[linear-gradient(to_bottom_left,#0C4B4000,#E0ECE940,#FFFFFF)]   items-center justify-center h-[calc(100vh-100px)] text-center">
         <div className=''>
           <h1 className="text-[#168F79] font-extrabold text-7xl italic product mt-10">

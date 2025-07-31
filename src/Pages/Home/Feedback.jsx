@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Globe, ChevronDown } from "lucide-react"
+import logo from '../../../public/image/logo.png';
 
 const languages = [
   { code: "en", name: "English" },
@@ -45,6 +46,13 @@ export default function Feedback() {
       className="bg-cover bg-center"
       style={{ backgroundImage: `url('/image/banner.png')` }}
     >
+      <div className=" px-30 pt-6 fixed mx-auto flex justify-between items-center">
+        <div className="flex items-center space-x-4">
+          <img src={logo} alt="Logo" className="h-14 w-auto" /> 
+        </div>
+
+        
+      </div>
       <div className=" bg-[linear-gradient(to_bottom_left,#0C4B4000,#E0ECE940,#FFFFFF)] ">
       {/* Header Section */}
       <div className="relative flex flex-col items-center justify-center text-center py-16 px-4 ">

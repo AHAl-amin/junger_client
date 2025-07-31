@@ -11,6 +11,7 @@ import Admin_Home from "../Layout/Admin/Admin_Home";
 import StartSurvey from "../Pages/Home/StartSurvey";
 import AiQuestion from "../Pages/Home/AiQuestion";
 import Feedback from "../Pages/Home/Feedback";
+import SurveyResult from "../Pages/Home/SurveyResult";
   
 
 export const router = createBrowserRouter([
@@ -22,6 +23,7 @@ export const router = createBrowserRouter([
           {path: '/start_survey', element: <StartSurvey/>},
           {path: '/ai_question', element: <AiQuestion/>},
           {path: '/feedback', element: <Feedback/>},
+          {path: '/survey_result', element: <SurveyResult/>},
       ]
     },
 

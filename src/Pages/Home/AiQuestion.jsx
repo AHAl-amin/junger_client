@@ -30,6 +30,7 @@ import { useState } from "react"
 import { Volume2, Mic } from "lucide-react"
 import Bannerbg from '../../../public/image/banner.png'
 import bannerMiddle from '../../../public/image/bannerMiddle.png'
+import logo from '../../../public/image/logo.png';
 
 export default function AiQuestion() {
     const [isRecording, setIsRecording] = useState(false)
@@ -45,6 +46,13 @@ export default function AiQuestion() {
 
 
         >
+            <div className=" px-30 pt-6 fixed mx-auto flex justify-between items-center">
+        <div className="flex items-center space-x-4">
+          <img src={logo} alt="Logo" className="h-14 w-auto" /> 
+        </div>
+
+        
+      </div>
 
             <div>
                 <img src={bannerMiddle} className="w-full absolute px-30 bottom-38 h-50" alt="" />

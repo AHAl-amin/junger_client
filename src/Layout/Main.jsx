@@ -7,9 +7,9 @@ const Main = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-t from-[#0C4B4000] via-[#E0ECE940] to-[#FFFFFF]">
       {/* Navbar */}
-      <div className="">
+      {/* <div className="">
         <Navbar />
-      </div>
+      </div> */}
 
       {/* Main content area */}
       <main className="flex-1">
