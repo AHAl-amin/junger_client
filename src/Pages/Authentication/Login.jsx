@@ -9,10 +9,7 @@ const Login = () => {
     <div className="min-h-screen flex flex-col md:flex-row">
  
       <div className="w-full md:w-1/2 h-[30vh] md:h-screen relative bg-gray-900">
-      <Lottie
-          animationData={login} 
-          loop={false}
-        className="absolute inset-0 w-3/4 h-full mx-auto object-cover"></Lottie>
+      <h1 className='text-white'>login page logo</h1>
       </div>
 
 
@@ -21,13 +18,7 @@ const Login = () => {
         
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[70vh] md:h-screen p-8">
           <div className="w-full max-w-xl space-y-8">
-            <div className="text-center">
-              <img 
-                src="https://i.ibb.co.com/sp5JLnkF/Whats-App-Image-2025-02-22-at-9-25-22-AM-3.png" 
-                alt="Logo" 
-                className="mx-auto mb-16 w-3/4" 
-              />
-            </div>
+            
 
             <form className="backdrop-blur-sm bg-white/10 p-10 mb-10 rounded-lg border border-gray-200 shadow-lg">
               <h2 className="text-3xl font-bold text-[#B28D28] mb-10 text-center">Login</h2>

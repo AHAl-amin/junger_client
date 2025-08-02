@@ -17,7 +17,7 @@ const Main = () => {
       </main>
 
       {/* Footer */}
-      <div className="h-[100px]">
+      <div className="">
         <Footer />
       </div>
     </div>
