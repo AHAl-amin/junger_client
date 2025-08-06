@@ -1,12 +1,10 @@
 import {createBrowserRouter} from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home";
-import Registration from "../Pages/Authentication/Registration";
-import Login from "../Pages/Authentication/Login";
 
-import EmailVerification from "../Pages/Authentication/EmailVerification";
-import OTP_Verification from "../Pages/Authentication/OTP_Verification";
-import ResetPassword from "../Pages/Authentication/ResetPassword";
+
+
+
 
 import StartSurvey from "../Pages/Home/StartSurvey";
 import AiQuestion from "../Pages/Home/AiQuestion";
@@ -30,9 +28,5 @@ export const router = createBrowserRouter([
     },
 
     // Authentication Routes
-    {path: '/sign_up', element: <Registration/>},
-    {path: '/login', element: <Login/>},
-    {path: '/verify', element: <EmailVerification/>},
-    {path: '/otp_verify', element: <OTP_Verification/>},
-    {path: '/reset_password', element: <ResetPassword/>},
+    
   ]);
