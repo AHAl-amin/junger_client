@@ -199,7 +199,7 @@ export default function AiQuestion() {
       className="bg-cover bg-center"
       style={{ backgroundImage: `url(${Bannerbg})` }}
     >
-      <div className="bg-[linear-gradient(to_bottom_left,#0C4B4000,#E0ECE940,#FFFFFF)] h-full">
+      <div className="bg-[linear-gradient(to_bottom_left,#0C4B4000,#E0ECE940,#FFFFFF)] h-[calc(100vh-7.5rem)]">
         <div className="px-30 pt-6 mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <img src={logo} alt="Logo" className="md:h-14 h-10 w-auto" />
@@ -209,7 +209,7 @@ export default function AiQuestion() {
         <div className="">
           <img
             src={bannerMiddle}
-            className="w-full absolute md:px-30 h-50 md:top-[40%] top-[30%]"
+            className="w-full absolute  h-50 md:top-[40%] top-[30%]"
             alt=""
           />
         </div>
@@ -262,7 +262,7 @@ export default function AiQuestion() {
         
          
 
-          <Link to='/feedback' className="md:mt-30 mt-20 flex justify-center items-center">
+          <Link to='/feedback' className="md:py-30 py-16 flex justify-center items-center">
             <button className="px-14 cursor-pointer rounded-full py-3 bg-gradient-to-t from-[#02362E] to-[#298F7D] text-gray-200 md:text-[20px] text-[12px]">
               Survey Feedback Overview
             </button>

@@ -6,10 +6,10 @@ import Home from "../Pages/Home/Home";
 
 
 
-import StartSurvey from "../Pages/Home/StartSurvey";
 import AiQuestion from "../Pages/Home/AiQuestion";
 import Feedback from "../Pages/Home/Feedback";
 import SurveyResult from "../Pages/Home/SurveyResult";
+
 
   
 
@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
       element: <Main />,
         children: [
           {path: '/', element: <Home/>},
-          {path: '/start_survey', element: <StartSurvey/>},
+          // {path: '/start_survey', element: <StartSurvey/>},
           {path: '/ai_question', element: <AiQuestion/>},
           {path: '/feedback', element: <Feedback/>},
           {path: '/survey_result', element: <SurveyResult/>},
@@ -27,6 +27,6 @@ export const router = createBrowserRouter([
       ]
     },
 
-    // Authentication Routes
+    
     
   ]);

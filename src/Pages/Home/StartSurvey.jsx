@@ -27,7 +27,7 @@ function StartSurvey() {
       className="bg-cover bg-center"
       style={{ backgroundImage: `url(${Bannerbg})` }}
     >
-     <div className='bg-[linear-gradient(to_bottom_left,#0C4B4000,#E0ECE940,#FFFFFF)] '>
+     <div className='bg-[linear-gradient(to_bottom_left,#0C4B4000,#E0ECE940,#FFFFFF)]  '>
       <div className=" px-30 pt-6  mx-auto flex justify-between items-center">
         <div className="flex md:items-center  space-x-4">
           <img src={logo} alt="Logo" className="md:h-14 h-10 w-auto" />

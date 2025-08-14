@@ -5,14 +5,14 @@
 
 import { useState, useEffect } from "react";
 import logo from "../../../public/image/logo.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Feedback() {
   const [conversation, setConversation] = useState([]); // Original (English)
   const [translatedConversation, setTranslatedConversation] = useState([]); // Translated (Hindi)
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const location = useLocation();
+ 
 
 
   const loadData = async () => {
@@ -25,7 +25,7 @@ export default function Feedback() {
       const result = await res.json();
       console.log("result...........", result);
 
-      setConversation(result.translation?.conversation || []);
+      setConversation(result.translation || []);
       setTranslatedConversation(result.conversation || []);
       setLoading(false);
     } catch (error) {
@@ -35,13 +35,13 @@ export default function Feedback() {
 
       setTimeout(() => {
         setLoading(false);
-      }, 1000);
+      }, 5000);
     }
   };
 
   useEffect(() => {
     loadData();
-  }, [location.pathname]);
+  }, []);
 
   return (
     <div
@@ -170,17 +170,10 @@ export default function Feedback() {
               No conversation data available.
             </p>
           )}
-          <Link to='/ai_question' className="w-full flex justify-center my-4">
+          <Link to='/survey_result' className="w-full flex justify-center my-4">
             <button className="flex items-center gap-2 md:px-6 py-2 px-2 md:py-3 md:font-bold text-[12px] md:text-[16px] font-medium  cursor-pointer bg-gradient-to-t from-[#02362E] to-[#298F7D] text-white rounded-full hover:bg-teal-800 transition-colors">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                />
-              </svg>
-              Start New Survey
+             
+              Show survey result
             </button>
 
           </Link>
